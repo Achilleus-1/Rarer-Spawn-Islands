@@ -1,0 +1,34 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "${mod_license}"
+
+[[mods]]
+modId = "${mod_id}"
+version = "${mod_version}"
+displayName = "${mod_name}"
+authors = "${mod_authors}"
+description = "Makes Spawn tropical islands about 10x rarer and volcanic islands about 50x rarer. Both rates are configurable. Existing islands and other structure types are preserved."
+
+[[mixins]]
+config = "rarer_spawn_islands.mixins.json"
+
+[[dependencies.${mod_id}]]
+modId = "neoforge"
+type = "required"
+versionRange = "${neo_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "minecraft"
+type = "required"
+versionRange = "${minecraft_version_range}"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${mod_id}]]
+modId = "spawn"
+type = "required"
+versionRange = "[4.0.8,)"
+ordering = "AFTER"
+side = "BOTH"

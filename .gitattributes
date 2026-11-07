@@ -1,0 +1,16 @@
+* text=auto eol=lf
+*.java text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
+*.md text eol=lf
+gradlew text eol=lf
+*.bat text eol=crlf
+*.png binary
+*.ogg binary
+*.jar binary
+
+# Shell entry points must remain usable on Linux.
+*.sh text eol=lf
+*.bash text eol=lf
+gradlew text eol=lf
+*.bat text eol=crlf
